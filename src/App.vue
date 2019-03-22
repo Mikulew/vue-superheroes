@@ -2,18 +2,21 @@
   <div id="app">
     <img class="super-heroes" alt="superheroes image" src="./assets/super-heroes.jpg">
     <Header msg="Super herores"/>
+    <Dashboard />
     <Footer />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue';
+import Dashboard from './components/Dashboard.vue';
 import Footer from './components/Footer.vue';
 
 export default {
   name: 'app',
   components: {
     Header,
+    Dashboard,
     Footer,
   }
 }
