@@ -1,18 +1,8 @@
 <template>
     <main>
-        <SuperheroesList />
+        <router-view></router-view>
     </main>
 </template>
-
-<script>
-import SuperheroesList from '../views/list/SuperheroesList.vue';
-
-export default {
-    components: {
-        SuperheroesList,
-    },
-}
-</script>
 
 <style scoped>
     .main {

@@ -12,30 +12,30 @@
 
         <tbody>
             <tr>
-                <th scope="row">1</th>
+                <th>1</th>
                 <td>Bruce Wayne</td>
                 <td>Batman</td>
                 <td>"I have a batcard!"</td>
                 <td>
-                    <button type="button" class="btn btn-outline-primary">Button</button>
+                    <router-link to="/1/general" class="btn btn-outline-primary">Button</router-link>
                 </td>
             </tr>
             <tr>
-                <th scope="row">2</th>
+                <th>2</th>
                 <td>Peter Parker</td>
                 <td>Spiderman</td>
                 <td>"Everybody likes me!"</td>
                 <td>
-                    <button type="button" class="btn btn-outline-primary">Button</button>
+                    <router-link to="/2/general" class="btn btn-outline-primary">Button</router-link>
                 </td>
             </tr>
             <tr>
-                <th scope="row">3</th>
+                <th>3</th>
                 <td>Mikulew</td>
                 <td>Front-end developer</td>
                 <td>"Where is my coffee?"</td>
                 <td>
-                    <button type="button" class="btn btn-outline-primary">Button</button>
+                    <router-link to="/3/general" class="btn btn-outline-primary">Button</router-link>
                 </td>
             </tr>
         </tbody>
