@@ -1,5 +1,7 @@
 <template>
   <header class="row">
+    <img class="super-heroes" alt="superheroes image" src="../assets/super-heroes.jpg">
+
     <h1>{{ msg }}</h1>
   </header>
 </template>
@@ -28,5 +30,9 @@ li {
 }
 a {
   color: #42b983;
+}
+.super-heroes {
+  width: auto;
+  height: 200px;
 }
 </style>

@@ -1,10 +1,9 @@
 <template>
   <div id="app">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-12">
-          <img class="super-heroes" alt="superheroes image" src="./assets/super-heroes.jpg">
-          <Header msg="Super herores"/>
+          <Header msg="Super heroes"/>
         </div>
 
         <div class="col-12">
@@ -20,9 +19,9 @@
 </template>
 
 <script>
-import Header from './components/Header.vue';
-import Container from './components/Container.vue';
-import Footer from './components/Footer.vue';
+import Header from './layout/Header.vue';
+import Container from './layout/Container.vue';
+import Footer from './layout/Footer.vue';
 
 export default {
   name: 'app',
@@ -42,10 +41,5 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
-}
-
-.super-heroes {
-  width: auto;
-  height: 200px;
 }
 </style>
