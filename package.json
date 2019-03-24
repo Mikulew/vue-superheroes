@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "node node_modules/foreman/nf.js start",
+    "start": "node server/index.js",
+    "dev": "nodemon -L --exec vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -29,7 +30,6 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
-    "foreman": "^3.0.1",
     "nodemon": "^1.18.10",
     "vue-template-compiler": "^2.5.21"
   },
