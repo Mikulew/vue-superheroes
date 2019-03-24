@@ -5,7 +5,8 @@
         </div>
 
         <div class="col-8">
-            <router-view></router-view>
+			<h1 v-if="loading">Loading...</h1>
+            <router-view v-else :item="superhero"></router-view>
         </div>
 
         <div class="col-12">
@@ -20,9 +21,23 @@ import VSidebar from '../../components/VSidebar.vue';
 export default {
     data() {
         return {
-            id: Number(this.$route.params.id),
+			id: Number(this.$route.params.id),
+			superhero: {},
+			loading: true,
         };
-    },
+	},
+	created() {
+		this.$http.get(`/api/info/${this.id}`)
+			.then(({data}) => {
+				this.loading = false;
+				this.superhero = {
+					appearance: data.appearance,
+					biography: data.biography,
+					connections: data.connections,
+					work: data.work,
+				};
+			});
+	},
     components: {
         VSidebar,
     }

@@ -1,9 +1,9 @@
 import SuperheroesList from '../../views/list/SuperheroesList.vue';
-import SuperheroesDetails from '../../views/details/SuperheroesDetails.vue';
-import SuperheroesBiography from '../../views/details/categories/SuperheroesBiography.vue';
-import SuperheroesAppearance from '../../views/details/categories/SuperheroesAppearance.vue';
-import SuperheroesWork from '../../views/details/categories/SuperheroesWork.vue';
-import SuperheroesConnections from '../../views/details/categories/SuperheroesConnections.vue';
+import SuperheroDetails from '../../views/details/SuperheroDetails.vue';
+import SuperheroBiography from '../../views/details/categories/SuperheroBiography.vue';
+import SuperheroAppearance from '../../views/details/categories/SuperheroAppearance.vue';
+import SuperheroWork from '../../views/details/categories/SuperheroWork.vue';
+import SuperheroConnections from '../../views/details/categories/SuperheroConnections.vue';
 
 export default [
     {
@@ -13,23 +13,23 @@ export default [
     {
         path: '/:id',
         redirect: '/:id/biography',
-        component: SuperheroesDetails,
+        component: SuperheroDetails,
         children: [
             {
                 path: 'biography',
-                component: SuperheroesBiography,
+                component: SuperheroBiography,
             },
             {
                 path: 'appearance',
-                component: SuperheroesAppearance,
+                component: SuperheroAppearance,
             },
             {
                 path: 'work',
-                component: SuperheroesWork,
+                component: SuperheroWork,
             },
             {
                 path: 'connections',
-                component: SuperheroesConnections,    
+                component: SuperheroConnections,
             },
         ],
     },
