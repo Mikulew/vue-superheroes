@@ -1,6 +1,6 @@
 # vue-superheroes
 
-## Production setup
+## Production server setup
 ```
 npm install
 npm run build
