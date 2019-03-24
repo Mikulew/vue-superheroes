@@ -17,7 +17,7 @@
                 <td>Batman</td>
                 <td>"I have a batcard!"</td>
                 <td>
-                    <router-link to="/1/general" class="btn btn-outline-primary">Button</router-link>
+                    <router-link to="/1" class="btn btn-outline-primary">Button</router-link>
                 </td>
             </tr>
             <tr>
@@ -26,7 +26,7 @@
                 <td>Spiderman</td>
                 <td>"Everybody likes me!"</td>
                 <td>
-                    <router-link to="/2/general" class="btn btn-outline-primary">Button</router-link>
+                    <router-link to="/2" class="btn btn-outline-primary">Button</router-link>
                 </td>
             </tr>
             <tr>
@@ -35,7 +35,7 @@
                 <td>Front-end developer</td>
                 <td>"Where is my coffee?"</td>
                 <td>
-                    <router-link to="/3/general" class="btn btn-outline-primary">Button</router-link>
+                    <router-link to="/3" class="btn btn-outline-primary">Button</router-link>
                 </td>
             </tr>
         </tbody>
