@@ -1,11 +1,11 @@
 <template>
     <div class="row">
         <div class="col-12">
-            <SearchBar v-model="search" @input="searchSuperhero" />
+            <SearchBar v-model="searchText" @input="inputChange" />
         </div>
 
         <div class="col-12">
-            <VTable />
+            <VTable :items="superheroes" :status="status" />
         </div>
     </div>
 </template>
@@ -17,24 +17,34 @@ import VTable from '../../components/VTable.vue';
 export default {
     data() {
         return {
-            search: '',
-            superheroes: [],
+            searchText: '',
+			superheroes: [],
+			status: null,
         };
     },
-    created() {
-        this.getSuperheroes(this.search);
-    },
     methods: {
-        getSuperheroes(string) {
-            this.$http.get(`/api/search/${string}`)
-                .then(({results}) => this.superheroes = results);
-        },
-        searchSuperhero(text) {
-            this.search = text;
-            this.getSuperheroes(this.search);
-
-        },
-    },
+		inputChange(text) {
+			this.searchText = text;
+		},
+		search(string) {
+			this.$http.get(`/api/search/${string}`)
+				.then(({data}) => {
+					if (!data.response || data.response === "error") {
+						return this.status = false;
+					} else if (data.response === "success") {
+						this.superheroes = data.results;
+						this.status = true;
+					}
+					});
+		}
+	},
+	watch: {
+		searchText(newValue) {
+			if (newValue.length > 2) {
+				return this.search(newValue);
+			}
+		},
+	},
     components: {
         SearchBar,
         VTable,

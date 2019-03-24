@@ -3,41 +3,38 @@
         <thead>
             <tr>
                 <th>#</th>
-                <th>Full Name</th>
+                <th>Name</th>
+				<th>Full name</th>
                 <th>Alter Egos</th>
-                <th>Lorem ipsum</th>
                 <th>Actions</th>
             </tr>
         </thead>
 
-        <tbody>
+        <tbody v-for="(item, index) in items" :key="index">
             <tr>
-                <th>1</th>
-                <td>Bruce Wayne</td>
-                <td>Batman</td>
-                <td>"I have a batcard!"</td>
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.biography['full-name']}}</td>
+                <td>{{item.biography['alter-egos']}}</td>
                 <td>
-                    <router-link to="/1" class="btn btn-outline-primary">Button</router-link>
-                </td>
-            </tr>
-            <tr>
-                <th>2</th>
-                <td>Peter Parker</td>
-                <td>Spiderman</td>
-                <td>"Everybody likes me!"</td>
-                <td>
-                    <router-link to="/2" class="btn btn-outline-primary">Button</router-link>
-                </td>
-            </tr>
-            <tr>
-                <th>3</th>
-                <td>Mikulew</td>
-                <td>Front-end developer</td>
-                <td>"Where is my coffee?"</td>
-                <td>
-                    <router-link to="/3" class="btn btn-outline-primary">Button</router-link>
+                    <router-link :to="`/${item.id}`" class="btn btn-outline-primary">Button</router-link>
                 </td>
             </tr>
         </tbody>
     </table>
 </template>
+
+<script>
+export default {
+	props: {
+		status: {
+			required: false,
+			default: null,
+		},
+		items: {
+			required: false,
+			default: () => [],
+		},
+	},
+}
+</script>
