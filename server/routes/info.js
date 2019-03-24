@@ -5,6 +5,15 @@ const config = require('../config')
 
 const router = new express.Router()
 
+router.get('/', (req, res, next) => {
+	return res.json({
+		error: {
+			code: 500,
+			message: 'Empty requests are not allowed'
+		}
+	})
+})
+
 router.get('/:id', async (req, res, next) => {
 	const path = `https://superheroapi.com/api/${config.accesstoken}/${req.params.id}`
 

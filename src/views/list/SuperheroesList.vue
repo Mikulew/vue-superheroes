@@ -26,7 +26,7 @@ export default {
     },
     methods: {
         getSuperheroes(string) {
-            this.$http.get(`/api/superheroes/${string}`)
+            this.$http.get(`/api/search/${string}`)
                 .then(({results}) => this.superheroes = results);
         },
         searchSuperhero(text) {
