@@ -30,18 +30,24 @@ export default {
 			this.$http.get(`/api/search/${string}`)
 				.then(({data}) => {
 					if (!data.response || data.response === "error") {
-						return this.status = false;
+						this.superheroes = [];
+						this.setStatus(false);
 					} else if (data.response === "success") {
 						this.superheroes = data.results;
-						this.status = true;
+						this.setStatus(true);
 					}
 					});
+		},
+		setStatus(value) {
+			this.status = value;
 		}
 	},
 	watch: {
 		searchText(newValue) {
 			if (newValue.length > 2) {
 				return this.search(newValue);
+			} else {
+				return this.setStatus(null);
 			}
 		},
 	},

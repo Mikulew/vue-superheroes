@@ -3,7 +3,7 @@ import SuperheroDetails from '../../views/details/SuperheroDetails.vue';
 import SuperheroBiography from '../../views/details/categories/SuperheroBiography.vue';
 import SuperheroAppearance from '../../views/details/categories/SuperheroAppearance.vue';
 import SuperheroWork from '../../views/details/categories/SuperheroWork.vue';
-import SuperheroConnections from '../../views/details/categories/SuperheroConnections.vue';
+import SuperheroConnections	 from '../../views/details/categories/SuperheroConnections.vue';
 
 export default [
     {
