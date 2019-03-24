@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-		"dev": "node node_modules/foreman/nf.js start",
+    "dev": "node node_modules/foreman/nf.js start",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
@@ -12,6 +12,7 @@
     "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "bootstrap": "^4.3.1",
+    "circular-json": "^0.5.9",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "jquery": "^3.3.1",

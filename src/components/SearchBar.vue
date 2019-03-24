@@ -16,7 +16,7 @@ export default {
     methods: {
         updateInput(text) {
             this.$emit('input', text);
-        },    
+        },
     },
 }
 </script>

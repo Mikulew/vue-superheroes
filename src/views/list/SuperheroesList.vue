@@ -8,7 +8,7 @@
             <VTable />
         </div>
     </div>
-</template> 
+</template>
 
 <script>
 import SearchBar from '../../components/SearchBar.vue';
@@ -26,13 +26,13 @@ export default {
     },
     methods: {
         getSuperheroes(string) {
-            this.$http.get(`https://superheroapi.com/api/access-token/search/${string}`)
+            this.$http.get(`/api/superheroes/${string}`)
                 .then(({results}) => this.superheroes = results);
         },
         searchSuperhero(text) {
             this.search = text;
             this.getSuperheroes(this.search);
-            
+
         },
     },
     components: {

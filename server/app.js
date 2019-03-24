@@ -24,7 +24,8 @@ app.use((req, res, next) => {
 })
 
 // Serve REST API routes
-app.use('/api/superheroes', require('./routes/superheroes'))
+app.use('/api/search', require('./routes/search'))
+app.use('/api/info', require('./routes/info'))
 
 // Serve front-end
 app.use(express.static(path.join(__dirname, '../dist')))
