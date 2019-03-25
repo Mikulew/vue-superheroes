@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="container-fluid no-getter">
-			<Header text="Super heroes"/>
+			<Header text="Super heroes" />
 			<Container />
 			<Footer />
     </div>
