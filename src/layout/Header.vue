@@ -32,6 +32,5 @@ export default {
 
 	.header-title {
 		font-size: 100px;
-		color: #27100d;
 	}
 </style>

@@ -1,13 +1,13 @@
 <template>
-	<div class="card">
+	<div class="card bg-secondary">
     	<div class="card-body row">
 			<div class="col-sm-6 col-12">
-				<b>Base</b>
+				<p class="title">Base</p>
 				<p>{{item.work.base}}</p>
 			</div>
 
 			<div class="col-sm-6 col-12">
-				<b>Alter egos</b>
+				<p class="title">Alter egos</p>
 				<p>{{item.work.occupation}}</p>
 			</div>
 		</div>

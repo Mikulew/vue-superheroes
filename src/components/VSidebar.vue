@@ -49,5 +49,15 @@ export default {
 </script>
 
 <style scoped>
+	.sidebar-title {
+		font-weight: 700;
+	}
 
+	.nav-link {
+		color: #c2b280
+	}
+
+	.nav-link:hover, .active {
+		color: #ffffff;
+	}
 </style>

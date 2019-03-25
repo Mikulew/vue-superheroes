@@ -1,13 +1,13 @@
 <template>
-    <div class="card">
+    <div class="card bg-secondary">
 		<div class="card-body row">
 			<div class="col-sm-6 col-12">
-				<b>Full name</b>
+				<p class="title">Full name</p>
 				<p>{{item.biography['full-name']}}</p>
 			</div>
 
 			<div class="col-sm-6 col-12">
-				<b>Alter egos</b>
+				<p class="title">Alter egos</p>
 				<p>{{item.biography['alter-egos']}}</p>
 			</div>
 		</div>

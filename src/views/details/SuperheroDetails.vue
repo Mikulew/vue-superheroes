@@ -1,5 +1,5 @@
 <template>
-    <div class="card">
+    <div class="card bg-dark">
 		<div class="card-body row">
 			<div class="col-4">
 				<VSidebar :id="id"/>
@@ -11,8 +11,8 @@
 			</div>
 		</div>
 
-		<div class="card-footer d-flex flex-row-reverse bg-dark">
-			<router-link to="/" class="btn btn-light" exact>Return</router-link>
+		<div class="card-footer d-flex flex-row-reverse">
+			<router-link to="/" class="btn btn-dark btn-return" exact>Return</router-link>
 		</div>
     </div>
 </template>
@@ -45,3 +45,13 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+	.card-footer {
+		background-color: #27100d;
+	}
+
+	.btn-return {
+		color: #c2b280;
+	}
+</style>

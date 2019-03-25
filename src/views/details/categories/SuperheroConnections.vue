@@ -1,13 +1,13 @@
 <template>
-	<div class="card">
+	<div class="card bg-secondary">
 		<div class="card-body row">
 			<div class="col-sm-6 col-12">
-				<b>Group affiliation</b>
+				<p class="title">Group affiliation</p>
 				<p>{{item.connections['group-affiliation']}}</p>
 			</div>
 
 			<div class="col-sm-6 col-12">
-				<b>Relatives</b>
+				<p class="title">Relatives</p>
 				<p>{{item.connections.relatives}}</p>
 			</div>
 		</div>
