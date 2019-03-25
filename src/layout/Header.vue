@@ -1,38 +1,37 @@
 <template>
   <header class="row">
-    <img class="super-heroes" alt="superheroes image" src="../assets/super-heroes.jpg">
-
-    <h1>{{ msg }}</h1>
+		<div class="col-12 header-container">
+			<h1 class="header-title title">{{ text }}</h1>
+		</div>
   </header>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
   props: {
-    msg: String
-  }
-}
+    text: {
+			required: false,
+			default: '',
+		},
+  },
+};
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-.super-heroes {
-  width: auto;
-  height: 200px;
-}
+	.header-container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background-image: url('../assets/superheroes.jpg');
+		background-color: #222222;
+		background-size: cover;
+		background-position: 100% center;
+		background-repeat: no-repeat;
+		height: 300px;
+	}
+
+	.header-title {
+		font-size: 100px;
+		color: #27100d;
+	}
 </style>

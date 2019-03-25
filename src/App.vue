@@ -1,19 +1,9 @@
 <template>
   <div id="app">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <Header msg="Super heroes"/>
-        </div>
-
-        <div class="col-12">
-          <Container />
-        </div>
-
-        <div class="col-12">
-          <Footer />
-        </div>
-      </div>
+    <div class="container-fluid no-getter">
+			<Header text="Super heroes"/>
+			<Container />
+			<Footer />
     </div>
   </div>
 </template>
@@ -34,12 +24,7 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+	.title {
+		font-family: 'Permanent Marker', cursive;
+	}
 </style>

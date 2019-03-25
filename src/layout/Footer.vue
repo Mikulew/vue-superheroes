@@ -13,7 +13,7 @@
 
 <script>
 export default {
-    
+
 }
 </script>
 
@@ -21,7 +21,6 @@ export default {
     .footer {
         background-color: #000000;
         color: #ffffff;
-        width: 100%;
         height: 100px;
     }
 </style>

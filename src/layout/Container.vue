@@ -1,5 +1,5 @@
 <template>
-    <main>
+    <main class="row">
         <router-view></router-view>
     </main>
 </template>
@@ -7,6 +7,6 @@
 <style scoped>
     .main {
         background-color: #eeeeeeee;
-        height: 500px;
+        min-height: 500px;
     }
 </style>
