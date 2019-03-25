@@ -1,13 +1,13 @@
 <template>
-    <div class="row">
-        <div class="col-12">
-            <SearchBar v-model="searchText" @input="inputChange" />
-        </div>
+    <main class="row">
+		<div class="col-12">
+			<SearchBar v-model="searchText" @input="inputChange" />
+		</div>
 
-        <div class="col-12">
-            <VTable :items="superheroes" :status="status" />
-        </div>
-    </div>
+		<div class="col-12">
+			<VTable :items="superheroes" :status="status" />
+		</div>
+    </main>
 </template>
 
 <script>

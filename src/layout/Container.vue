@@ -1,12 +1,3 @@
 <template>
-    <main class="row">
-        <router-view></router-view>
-    </main>
+	<router-view></router-view>
 </template>
-
-<style scoped>
-    .main {
-        background-color: #eeeeeeee;
-        min-height: 500px;
-    }
-</style>

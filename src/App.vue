@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="container-fluid no-getter">
+    <div class="container-fluid">
 			<Header text="Super heroes" />
 			<Container />
 			<Footer />
