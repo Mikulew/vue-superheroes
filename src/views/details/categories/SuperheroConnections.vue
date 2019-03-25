@@ -1,15 +1,15 @@
 <template>
-	<div class="row">
-    	<h1>SuperheroesConnections</h1>
+	<div class="card">
+		<div class="card-body row">
+			<div class="col-sm-6 col-12">
+				<b>Group affiliation</b>
+				<p>{{item.connections['group-affiliation']}}</p>
+			</div>
 
-		<div class="col-12">
-			<b>Group affiliation</b>
-			<p>{{item.connections['group-affiliation']}}</p>
-		</div>
-
-		<div class="col-12">
-			<b>Relatives</b>
-			<p>{{item.connections.relatives}}</p>
+			<div class="col-sm-6 col-12">
+				<b>Relatives</b>
+				<p>{{item.connections.relatives}}</p>
+			</div>
 		</div>
 	</div>
 </template>

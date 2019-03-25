@@ -1,17 +1,19 @@
 <template>
-    <div class="row">
-        <div class="col-4">
-            <VSidebar :id="id"/>
-        </div>
+    <div class="card">
+		<div class="card-body row">
+			<div class="col-4">
+				<VSidebar :id="id"/>
+			</div>
 
-        <div class="col-8">
-			<h1 v-if="loading">Loading...</h1>
-            <router-view v-else :item="superhero"></router-view>
-        </div>
+			<div class="col-8">
+				<h1 v-if="loading">Loading...</h1>
+				<router-view v-else :item="superhero"></router-view>
+			</div>
+		</div>
 
-        <div class="col-12">
-            <router-link to="/" class="btn btn-outline-secondary" exact>Return</router-link>
-        </div>
+		<div class="card-footer d-flex flex-row-reverse bg-dark">
+			<router-link to="/" class="btn btn-light" exact>Return</router-link>
+		</div>
     </div>
 </template>
 

@@ -1,15 +1,15 @@
 <template>
-    <div class="row">
-		<h1>SuperheroesBiography</h1>
+    <div class="card">
+		<div class="card-body row">
+			<div class="col-sm-6 col-12">
+				<b>Full name</b>
+				<p>{{item.biography['full-name']}}</p>
+			</div>
 
-		<div class="col-12">
-			<b>Full name</b>
-			<p>{{item.biography['full-name']}}</p>
-		</div>
-
-		<div class="col-12">
-			<b>Alter egos</b>
-			<p>{{item.biography['alter-egos']}}</p>
+			<div class="col-sm-6 col-12">
+				<b>Alter egos</b>
+				<p>{{item.biography['alter-egos']}}</p>
+			</div>
 		</div>
 	</div>
 </template>
