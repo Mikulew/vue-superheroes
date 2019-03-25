@@ -6,11 +6,11 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import router from './router/router.js';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faCode, faPhone, faAddressCard, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 import "./css/global.css";
 
-library.add(faSearch);
+library.add(faSearch, faCode, faPhone, faAddressCard, faChevronRight);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
 Vue.config.productionTip = false;

@@ -4,7 +4,7 @@
 			<SearchBar v-model="searchText" @input="inputChange" />
 		</div>
 
-		<div class="col-12">
+		<div class="col-12 content">
 			<VTable :items="superheroes" :status="status" />
 		</div>
     </main>
