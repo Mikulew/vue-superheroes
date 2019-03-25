@@ -6,7 +6,7 @@
 			</div>
 
 			<div class="col-8">
-				<h1 v-if="loading">Loading...</h1>
+				<h1 class="text-center title loading" v-if="loading">Loading...</h1>
 				<router-view v-else :item="superhero"></router-view>
 			</div>
 		</div>
@@ -53,5 +53,10 @@ export default {
 
 	.btn-return {
 		color: #c2b280;
+	}
+
+	.loading {
+		color: #c2b280;
+		height: 100%;
 	}
 </style>
