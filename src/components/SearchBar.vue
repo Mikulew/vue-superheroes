@@ -5,7 +5,12 @@
 				<font-awesome-icon class="search-bar-icon" icon="search" />
 			</div>
 		</div>
-        <input type="text" class="search-bar form-control" :value="value" @input="updateInput($event.target.value)" placeholder="Search superhero..." />
+        <input 	type="text"
+				spellcheck="false"
+				class="search-bar form-control"
+				:value="value"
+				@input="updateInput($event.target.value)"
+				placeholder="Search superhero..." />
     </div>
 </template>
 
