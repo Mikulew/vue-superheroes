@@ -19,7 +19,7 @@
 						<td>{{item.biography['full-name']}}</td>
 						<td>{{item.biography['alter-egos']}}</td>
 						<td>
-							<router-link :to="`/${item.id}`" class="btn btn-outline-primary" title="Show more details">Show</router-link>
+							<router-link :to="`/${item.id}`" class="btn btn-sm btn-secondary" title="Show more details">Show more</router-link>
 						</td>
 					</tr>
 				</tbody>
@@ -53,3 +53,12 @@
 		},
 	}
 </script>
+
+<style scoped>
+	.table tbody {
+		color: #c2b280;
+	}
+	.table thead {
+		color: #ffffff;
+	}
+</style>
