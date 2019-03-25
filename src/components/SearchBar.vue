@@ -29,6 +29,7 @@ export default {
 	.search-bar.form-control {
 		background-color: #c2b280;
 		color: #27100d;
+		font-weight: 700;
 	}
 
 	.input-group-text {
