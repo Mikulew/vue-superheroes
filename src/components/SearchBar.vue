@@ -1,11 +1,11 @@
 <template>
-	<div class="input-group mb-2">
+	<div class="input-group my-3">
 		<div class="input-group-prepend">
 			<div class="input-group-text">
-				<font-awesome-icon icon="search" />
+				<font-awesome-icon class="search-bar-icon" icon="search" />
 			</div>
 		</div>
-        <input type="text" class="form-control" :value="value" @input="updateInput($event.target.value)" placeholder="Search superhero..." />
+        <input type="text" class="search-bar form-control" :value="value" @input="updateInput($event.target.value)" placeholder="Search superhero..." />
     </div>
 </template>
 
@@ -24,3 +24,19 @@ export default {
     },
 }
 </script>
+
+<style scoped>
+	.search-bar.form-control {
+		background-color: #c2b280;
+		color: #27100d;
+	}
+
+	.input-group-text {
+		background-color: #27100d;
+		border: 1px solid #c2b280;
+	}
+
+	.search-bar-icon {
+		color: #c2b280;
+	}
+</style>

@@ -37,10 +37,10 @@
 	}
 
 	.footer-link {
-		color: #ffffca;
+		color: #c2b280;
 	}
 
 	.footer-link:hover {
-		color: #ffffff;
+		color: #ffffca;
 	}
 </style>
