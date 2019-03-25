@@ -28,9 +28,13 @@ export default {
 		background-position: 100% center;
 		background-repeat: no-repeat;
 		height: 300px;
+		padding: 0;
 	}
 
 	.header-title {
+		background-color: rgba(0, 0, 0, 0.8);
 		font-size: 100px;
+		width: 100%;
+		text-align: center;
 	}
 </style>

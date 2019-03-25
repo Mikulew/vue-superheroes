@@ -15,13 +15,13 @@
 				<tbody v-for="(item, index) in items" :key="index">
 					<tr>
 						<td>
-							<router-link :to="`/${item.id}`" class="card-link">{{item.id}}</router-link>
+							<router-link :to="`/${item.id}`" class="link">{{item.id}}</router-link>
 						</td>
 						<td>{{item.name}}</td>
 						<td>{{item.biography['full-name']}}</td>
 						<td>{{item.biography['alter-egos']}}</td>
 						<td>
-							<router-link :to="`/${item.id}`" class="btn btn-sm btn-secondary" title="Show more details">Show more</router-link>
+							<router-link :to="`/${item.id}`" class="btn btn-sm btn-action" title="Show more details">Show more</router-link>
 						</td>
 					</tr>
 				</tbody>
@@ -31,10 +31,10 @@
 		<div class="col-12" v-else>
 			<div class="card text-white bg-dark mb-3">
 				<div class="card-body text-center" v-if="!status && status === null">
-					<div class="card-title">Choose the superhero by typing the text above</div>
+					<div class="text">Choose the superhero by typing the text above</div>
 				</div>
 				<div class="card-body text-center" v-if="!status && status !== null">
-					<div class="card-title">Superhero not found</div>
+					<div class="text">Superhero not found</div>
 				</div>
 			</div>
 		</div>
@@ -55,12 +55,3 @@
 		},
 	}
 </script>
-
-<style scoped>
-	.table tbody, .card-title, .card-link {
-		color: #c2b280;
-	}
-	.table thead, .card-link:hover {
-		color: #ffffff;
-	}
-</style>

@@ -12,5 +12,38 @@ body {
 
 .title {
 	font-family: 'Permanent Marker', cursive;
-	color: #27100d;
+	color: #d8980e;
+}
+
+.link, .table tbody, .text, .nav-link {
+	color: #c2b280;
+}
+
+.nav-link {
+	font-weight: 700;
+}
+
+.link:hover, .table thead, .active, .nav-link:hover {
+	color: #ffffff;
+}
+
+.btn-action {
+	background-color:#c2b280;
+	color: #222222;
+	border: 1px solid transparent;
+}
+
+.btn-return {
+	color: #c2b280;
+}
+
+.btn-action:hover {
+	background-color:#222222;
+	color: #c2b280;
+	border: 1px solid #c2b280;
+}
+
+.image {
+	border: 2px solid #d8980e;
+	width: 100%;
 }

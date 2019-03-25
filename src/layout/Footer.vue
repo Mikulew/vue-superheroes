@@ -13,7 +13,7 @@
         <div class="col-6 text-center mt-2">
             <div>
 				<font-awesome-icon class="footer-icon" icon="chevron-right" />
-				<a class="footer-link"  href="https://github.com/Mikulew/vue-superheroes" target="_blank">Github link to project</a>
+				<a class="link"  href="https://github.com/Mikulew/vue-superheroes" target="_blank">Github link to project</a>
 			</div>
 			<div>
 				<font-awesome-icon class="footer-icon" icon="phone" />
@@ -34,13 +34,5 @@
 
 	.footer-icon {
 		margin-right: 15px;
-	}
-
-	.footer-link {
-		color: #c2b280;
-	}
-
-	.footer-link:hover {
-		color: #ffffca;
 	}
 </style>

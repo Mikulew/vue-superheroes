@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar flex-column">
-        <p class="sidebar-title">Superheroe's details #{{id}}</p>
+        <p class="sidebar-title title">Superheroe's details #{{id}}</p>
         <ul class="nav flex-column">
             <li class="nav-item">
                 <router-link :to="`/${id}/biography`"
@@ -51,13 +51,6 @@ export default {
 <style scoped>
 	.sidebar-title {
 		font-weight: 700;
-	}
-
-	.nav-link {
-		color: #c2b280
-	}
-
-	.nav-link:hover, .active {
-		color: #ffffff;
+		font-size: 20px;
 	}
 </style>

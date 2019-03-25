@@ -1,5 +1,5 @@
 <template>
-    <div class="card bg-dark">
+    <div class="card bg-dark mt-3">
 		<div class="card-body row">
 			<div class="col-4">
 				<VSidebar :id="id"/>
@@ -37,6 +37,7 @@ export default {
 					biography: data.biography,
 					connections: data.connections,
 					work: data.work,
+					image: data.image,
 				};
 			});
 	},
@@ -48,11 +49,7 @@ export default {
 
 <style scoped>
 	.card-footer {
-		background-color: #27100d;
-	}
-
-	.btn-return {
-		color: #c2b280;
+		background-color: #111111;
 	}
 
 	.loading {
