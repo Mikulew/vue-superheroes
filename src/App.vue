@@ -22,9 +22,3 @@ export default {
   }
 }
 </script>
-
-<style>
-	.title {
-		font-family: 'Permanent Marker', cursive;
-	}
-</style>

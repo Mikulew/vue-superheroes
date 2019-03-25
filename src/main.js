@@ -5,6 +5,7 @@ import App from './App.vue';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import router from './router/router.js';
+import "./assets/global.css";
 
 Vue.config.productionTip = false;
 Vue.use(VueAxios, axios);
