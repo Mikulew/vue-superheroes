@@ -1,15 +1,35 @@
 <template>
 	<div class="card bg-secondary">
 		<div class="card-body row">
-			<p>{{ item.powerstats }}</p>
 			<div class="col-12">
-				<v-chart :chartData="verticalBarChartData"></v-chart>
+				<VChart :chartData="verticalBarChartData" />
+			</div>
+
+			<div class="col-2">
+				<span class="title">Intelligence</span>
+			</div>
+			<div class="col-2">
+				<span class="title">Strength</span>
+			</div>
+			<div class="col-2">
+				<span class="title">Speed</span>
+			</div>
+			<div class="col-2">
+				<span class="title">Durability</span>
+			</div>
+			<div class="col-2">
+				<span class="title">Power</span>
+			</div>
+			<div class="col-2">
+				<span class="title">Combat</span>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
+import VChart from '../../../components/VChart/VChart.vue';
+
 export default {
 	props: {
 		item: {
@@ -22,36 +42,26 @@ export default {
 			verticalBarChartData: {
 				chartType: "vBarChart",
 				selector: "vChart",
-				title: "Powerstats",
-				subtitle: this.item.name,
+				title: "",
+				subtitle: "",
 				width: 600,
-				height: 500,
-				metric: ["total", "forecast"],
-				dim: "month",
-				data: this.item.powerstats,
+				height: 400,
+				metric: ["intelligence", "strength", "speed", "durability", "power", "combat"],
+				palette: {
+					fill:  ["#ffffd9", "#edf8b1", "#c7e9b4", "#7fcdbb", "#41b6c4", "#1d91c0", "#225ea8", "#253494", "#081d58"],
+				},
+				data: [this.item.powerstats],
 				legends: {
 					enabled: false,
 					height: 25,
 					width: 50
 				},
 			},
-		}
+		};
 	},
-	created() {
-		//
-	},
-	methods: {
-		//
+	components: {
+		VChart,
 	},
 }
 </script>
 
-<style scoped>
-	.bar-chart {
-		background-color: red;
-		fill: yellow;
-	}
-	.bar {
-		fill: steelblue;
-	}
-</style>

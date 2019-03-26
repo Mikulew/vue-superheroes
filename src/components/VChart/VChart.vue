@@ -1,3 +1,8 @@
+<template>
+	<svg :id="chartData.selector" x="5" y="5" :height="height + 20" :width="width + 20"></svg>
+</template>
+
+<script>
 /**
  *  @fileOverview Chart component containing all of the generic components required for charts
  *
@@ -23,10 +28,8 @@ const d3 = Object.assign({},
  *  @namespace
  */
 
-const Chart = {
-  install(Vue) {
-    Vue.component('v-chart', {
-      props: ['chartData'],
+export default {
+	  props: ['chartData'],
       data() {
         return {
           selector: `${this.chartData.selector}-${this.chartData.chartType}`,
@@ -38,7 +41,7 @@ const Chart = {
          * @memberOf Chart
          */
         initalizeChart() {
-          const cs = this[this.chartData.chartType]('init');
+					const cs = this[this.chartData.chartType]('init');
           this.drawTitle();
           this.generateAxisLabels(cs);
           this.generateLegend(cs);
@@ -166,7 +169,8 @@ const Chart = {
         generateLegend(cs) {
           if (this.chartData.legends && this.chartData.legends.enabled === true) {
             cs.palette.lineFill = (Array.isArray(cs.palette.lineFill)) ? cs.palette.lineFill : new Array(cs.palette.lineFill);
-            cs.palette.fill = (Array.isArray(cs.palette.fill)) ? cs.palette.fill : new Array(cs.palette.fill);
+						cs.palette.fill = (Array.isArray(cs.palette.fill)) ? cs.palette.fill : new Array(cs.palette.fill);
+
             this.metric.forEach( (e, i) => {
               d3.select(`#${this.chartData.selector}`)
               .append('text')
@@ -185,9 +189,9 @@ const Chart = {
               .attr("width", 30)
               .attr("height", 10)
               .style("fill", function () {
-              const fill = cs.palette.lineFill[i] || cs.palette.fill[i];
+									const fill = cs.palette.lineFill[i] || cs.palette.fill[i];
                 return fill;
-              });
+							});
             })
           }
         },
@@ -456,14 +460,5 @@ const Chart = {
           deep: true,
         },
       },
-      template:
-        '<svg :id=\'this.chartData.selector\' x=\'5\' y=\'5\' :height=\'this.height + 20\' :width=\'this.width + 20\'> </svg>',
-    });
-  },
-};
-
-export default Chart;
-
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(Chart);
 }
+</script>

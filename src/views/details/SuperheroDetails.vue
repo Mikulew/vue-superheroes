@@ -37,21 +37,10 @@ export default {
 					biography: data.biography,
 					connections: data.connections,
 					work: data.work,
-					powerstats: this.formatData(data.powerstats),
+					powerstats: data.powerstats,
 					image: data.image,
 				};
 			});
-	},
-	methods: {
-		formatData(data) {
-			const arr = [];
-			for (let key in data) {
-				arr.push({
-						[key]: data[key],
-					});
-			}
-			return arr;
-		}
 	},
     components: {
         VSidebar,
