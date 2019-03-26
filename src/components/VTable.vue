@@ -8,6 +8,7 @@
 						<th>Name</th>
 						<th>Full name</th>
 						<th>Alter Egos</th>
+						<th>Gender</th>
 						<th>Actions</th>
 					</tr>
 				</thead>
@@ -20,6 +21,7 @@
 						<td>{{item.name}}</td>
 						<td>{{item.biography['full-name']}}</td>
 						<td>{{item.biography['alter-egos']}}</td>
+						<td>{{item.appearance.gender}}</td>
 						<td>
 							<router-link :to="`/${item.id}`" class="btn btn-sm btn-action" title="Show more details">Show more</router-link>
 						</td>
@@ -29,12 +31,12 @@
 		</div>
 
 		<div class="col-12" v-else>
-			<div class="card text-white bg-dark mb-3">
+			<div class="card bg-dark mb-3">
 				<div class="card-body text-center" v-if="!status && status === null">
 					<div class="text">Choose the superhero by typing the text above</div>
 				</div>
 				<div class="card-body text-center" v-if="!status && status !== null">
-					<div class="text">Superhero not found</div>
+					<div class="text-error">Superhero not found</div>
 				</div>
 			</div>
 		</div>

@@ -29,7 +29,7 @@ const d3 = Object.assign({},
  */
 
 export default {
-	  props: ['chartData'],
+		props: ['chartData'],
       data() {
         return {
           selector: `${this.chartData.selector}-${this.chartData.chartType}`,

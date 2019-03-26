@@ -1,6 +1,6 @@
 <template>
 	<div class="card bg-secondary">
-    	<div class="card-body row">
+		<div class="card-body row">
 			<div class="col-4">
 				<img class="image" :src="item.image.url" :alt="item.name">
 			</div>

@@ -15,6 +15,10 @@ body {
 	color: #d8980e;
 }
 
+.text-error {
+	color: #d8980e;
+}
+
 .link, .table tbody, .text, .nav-link {
 	color: #c2b280;
 }
