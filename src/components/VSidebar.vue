@@ -33,6 +33,14 @@
                              <span>Connections</span>
                 </router-link>
             </li>
+
+			<li class="nav-item">
+                <router-link :to="`/${id}/powerstats`"
+                             class="nav-link"
+                             active-class="active">
+                             <span>Powerstats</span>
+                </router-link>
+            </li>
         </ul>
     </nav>
 </template>

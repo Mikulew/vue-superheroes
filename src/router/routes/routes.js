@@ -4,6 +4,7 @@ import SuperheroBiography from '../../views/details/categories/SuperheroBiograph
 import SuperheroAppearance from '../../views/details/categories/SuperheroAppearance.vue';
 import SuperheroWork from '../../views/details/categories/SuperheroWork.vue';
 import SuperheroConnections	 from '../../views/details/categories/SuperheroConnections.vue';
+import SuperheroPowerstats from '../../views/details/categories/SuperheroPowerstats.vue';
 
 export default [
     {
@@ -30,7 +31,11 @@ export default [
             {
                 path: 'connections',
                 component: SuperheroConnections,
-            },
+			},
+			{
+				path: 'powerstats',
+				component: SuperheroPowerstats,
+			},
         ],
     },
 ];

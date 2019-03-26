@@ -1,5 +1,5 @@
 <template>
-    <div class="card bg-dark mt-3">
+    <main class="card bg-dark mt-3">
 		<div class="card-body row">
 			<div class="col-4">
 				<VSidebar :id="id"/>
@@ -14,7 +14,7 @@
 		<div class="card-footer d-flex flex-row-reverse">
 			<router-link to="/" class="btn btn-dark btn-return" exact>Return</router-link>
 		</div>
-    </div>
+    </main>
 </template>
 
 <script>
@@ -37,9 +37,21 @@ export default {
 					biography: data.biography,
 					connections: data.connections,
 					work: data.work,
+					powerstats: this.formatData(data.powerstats),
 					image: data.image,
 				};
 			});
+	},
+	methods: {
+		formatData(data) {
+			const arr = [];
+			for (let key in data) {
+				arr.push({
+						[key]: data[key],
+					});
+			}
+			return arr;
+		}
 	},
     components: {
         VSidebar,
