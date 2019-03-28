@@ -1,6 +1,6 @@
 <template>
     <nav class="navbar flex-column">
-        <p class="sidebar-title title">Superheroe's details #{{id}}</p>
+        <p class="sidebar-title title">Superhero's details #{{id}}</p>
         <ul class="nav flex-column">
             <li class="nav-item">
                 <router-link :to="`/${id}/biography`"
