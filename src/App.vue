@@ -1,9 +1,9 @@
 <template>
   <div id="app">
-    <div class="container-fluid">
-			<Header text="Super heroes" />
-			<Container />
-			<Footer />
+    <div class="container-fluid d-flex flex-column">
+		<Header text="Super heroes" />
+		<Container />
+		<Footer />
     </div>
   </div>
 </template>
@@ -14,7 +14,6 @@ import Container from './layout/Container.vue';
 import Footer from './layout/Footer.vue';
 
 export default {
-  name: 'app',
   components: {
     Header,
     Container,
@@ -22,3 +21,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+	.container-fluid {
+		padding: 0px;
+		min-height: 100vh;
+	}
+</style>

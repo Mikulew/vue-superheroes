@@ -1,10 +1,10 @@
 <template>
-    <main class="row">
-		<div class="col-12">
+    <main class="row no-gutters">
+		<div class="col-12 px-3">
 			<SearchBar v-model="searchText" @input="inputChange" />
 		</div>
 
-		<div class="col-12 content">
+		<div class="col-12 px-3">
 			<VTable :items="superheroes" :status="status" />
 		</div>
     </main>

@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer row">
+    <footer class="footer row no-gutters">
         <div class="col-6 text-center mt-2">
 			<div>
 				<font-awesome-icon class="footer-icon" icon="address-card" />
@@ -25,11 +25,10 @@
 
 <style scoped>
     .footer {
-		position: fixed;
-		bottom: 0;
         background-color: #111111;
 		height: 70px;
 		width: 100%;
+		margin: auto auto 0 auto;
 	}
 
 	.footer-icon {

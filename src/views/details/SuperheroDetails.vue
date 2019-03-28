@@ -1,6 +1,6 @@
 <template>
-    <main class="card bg-dark mt-3">
-		<div class="card-body row">
+    <main class="card bg-dark m-3">
+		<div class="card-body row no-gutters">
 			<div class="col-4">
 				<VSidebar :id="id"/>
 			</div>
