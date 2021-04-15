@@ -1,14 +1,14 @@
 <template>
 	<div class="card bg-secondary">
-    	<div class="card-body row">
+		<div class="card-body row">
 			<div class="col-sm-6 col-12">
 				<p class="title">Base</p>
-				<p>{{item.work.base}}</p>
+				<p>{{ item.work.base }}</p>
 			</div>
 
 			<div class="col-sm-6 col-12">
 				<p class="title">Alter egos</p>
-				<p>{{item.work.occupation}}</p>
+				<p>{{ item.work.occupation }}</p>
 			</div>
 		</div>
 	</div>
@@ -19,8 +19,8 @@ export default {
 	props: {
 		item: {
 			required: true,
-			type: Object
-		}
-	}
-}
+			type: Object,
+		},
+	},
+};
 </script>

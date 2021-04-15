@@ -9,32 +9,32 @@
 				<div class="row">
 					<div class="col-sm-6 col-12">
 						<p class="title">Gender</p>
-						<p>{{item.appearance.gender}}</p>
+						<p>{{ item.appearance.gender }}</p>
 					</div>
 
 					<div class="col-sm-6 col-12">
 						<p class="title">Race</p>
-						<p>{{item.appearance.race}}</p>
+						<p>{{ item.appearance.race }}</p>
 					</div>
 
 					<div class="col-sm-6 col-12">
 						<p class="title">Eye color</p>
-						<p>{{item.appearance['eye-color']}}</p>
+						<p>{{ item.appearance['eye-color'] }}</p>
 					</div>
 
 					<div class="col-sm-6 col-12">
 						<p class="title">Hair color</p>
-						<p>{{item.appearance['hair-color']}}</p>
+						<p>{{ item.appearance['hair-color'] }}</p>
 					</div>
 
 					<div class="col-sm-6 col-12">
 						<p class="title">Height</p>
-						<p>{{item.appearance.height[1] || '-'}}</p>
+						<p>{{ item.appearance.height[1] || '-' }}</p>
 					</div>
 
 					<div class="col-sm-6 col-12">
 						<p class="title">Weight</p>
-						<p>{{item.appearance.weight[1] || '-'}}</p>
+						<p>{{ item.appearance.weight[1] || '-' }}</p>
 					</div>
 				</div>
 			</div>
@@ -48,7 +48,7 @@ export default {
 		item: {
 			required: true,
 			type: Object
-		}
-	}
-}
+		},
+	},
+};
 </script>

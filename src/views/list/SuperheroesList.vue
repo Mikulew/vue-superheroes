@@ -1,5 +1,5 @@
 <template>
-    <main class="row no-gutters">
+	<main class="row no-gutters">
 		<div class="col-12 px-3">
 			<SearchBar v-model="searchText" @input="inputChange" />
 		</div>
@@ -7,7 +7,7 @@
 		<div class="col-12 px-3">
 			<VTable :items="superheroes" :status="status" />
 		</div>
-    </main>
+	</main>
 </template>
 
 <script>
@@ -15,14 +15,14 @@ import SearchBar from '../../components/SearchBar.vue';
 import VTable from '../../components/VTable.vue';
 
 export default {
-    data() {
-        return {
-            searchText: '',
+	data() {
+		return {
+			searchText: '',
 			superheroes: [],
 			status: null,
-        };
-    },
-    methods: {
+		};
+	},
+	methods: {
 		inputChange(text) {
 			this.searchText = text;
 		},
@@ -36,24 +36,23 @@ export default {
 						this.superheroes = data.results;
 						this.setStatus(true);
 					}
-					});
+				});
 		},
 		setStatus(value) {
 			this.status = value;
-		}
+		},
 	},
 	watch: {
 		searchText(newValue) {
 			if (newValue.length > 2) {
 				return this.search(newValue);
-			} else {
-				return this.setStatus(null);
 			}
+			return this.setStatus(null);
 		},
 	},
-    components: {
-        SearchBar,
-        VTable,
-    },
-}
+	components: {
+		SearchBar,
+		VTable,
+	},
+};
 </script>

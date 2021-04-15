@@ -7,35 +7,35 @@ import SuperheroConnections	 from '../../views/details/categories/SuperheroConne
 import SuperheroPowerstats from '../../views/details/categories/SuperheroPowerstats.vue';
 
 export default [
-    {
-        path: '/',
-        component: SuperheroesList,
-    },
-    {
-        path: '/:id',
-        redirect: '/:id/biography',
-        component: SuperheroDetails,
-        children: [
-            {
-                path: 'biography',
-                component: SuperheroBiography,
-            },
-            {
-                path: 'appearance',
-                component: SuperheroAppearance,
-            },
-            {
-                path: 'work',
-                component: SuperheroWork,
-            },
-            {
-                path: 'connections',
-                component: SuperheroConnections,
-			},
-			{
-				path: 'powerstats',
-				component: SuperheroPowerstats,
-			},
-        ],
-    },
+  {
+    path: '/',
+    component: SuperheroesList,
+  },
+  {
+    path: '/:id',
+    redirect: '/:id/biography',
+    component: SuperheroDetails,
+    children: [
+        {
+          path: 'biography',
+          component: SuperheroBiography,
+        },
+        {
+          path: 'appearance',
+          component: SuperheroAppearance,
+        },
+        {
+          path: 'work',
+          component: SuperheroWork,
+        },
+        {
+          path: 'connections',
+          component: SuperheroConnections,
+        },
+        {
+          path: 'powerstats',
+          component: SuperheroPowerstats,
+        },
+    ],
+  },
 ];

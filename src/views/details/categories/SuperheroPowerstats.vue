@@ -34,8 +34,8 @@ export default {
 	props: {
 		item: {
 			required: true,
-			type: Object
-		}
+			type: Object,
+		},
 	},
 	data() {
 		return {
@@ -57,6 +57,5 @@ export default {
 	components: {
 		VChart,
 	},
-}
+};
 </script>
-

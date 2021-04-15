@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <div class="container-fluid d-flex flex-column">
-		<Header text="Super heroes" />
-		<Container />
-		<Footer />
+      <Header text="Super heroes" />
+      <Container />
+      <Footer />
     </div>
   </div>
 </template>
@@ -18,8 +18,8 @@ export default {
     Header,
     Container,
     Footer,
-  }
-}
+  },
+};
 </script>
 
 <style scoped>
