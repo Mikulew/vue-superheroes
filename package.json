@@ -7,7 +7,8 @@
     "dev": "nodemon -L --exec vue-cli-service serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "clean": "rimraf dist"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.35",
@@ -37,6 +38,7 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.2.3",
     "nodemon": "^1.19.4",
+    "rimraf": "^3.0.2",
     "vue-template-compiler": "^2.6.12"
   },
   "eslintConfig": {
